@@ -1,0 +1,88 @@
+:root{
+    /* Colors */
+    --Very--Dark--Grayish--Blue: hsl(217, 19%, 35%);
+    --Desaturate--Dar--Blue: hsl(214, 17%, 51%);
+    --Grayis--Blue: hsl(212, 23%, 69%);
+    --Light--Grayish--Blue: hsl(210, 46%, 95%);
+
+    /* Font */
+    --fz: 13px;
+    --Manrope: "Manrope", sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 1rem;
+    font-size: var(--fz);
+    font-family: var(--Manrope);
+    background-color: var(--Light--Grayish--Blue);
+}
+
+main{
+    display: flex;
+    max-width: 40rem;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.img-wrapper{
+    height: 100%;
+}
+
+.intro{
+    padding: 1.5rem 2rem;
+}
+
+.intro> * + *{
+    margin-top: 1rem;
+}
+
+.txt-wrapper> *+*{
+    margin-top: 1rem;
+}
+
+.bold-txt{
+    font-size: 1.2rem;
+    color: var(--Very--Dark--Grayish--Blue);
+}
+
+.intro-paragraph{
+    font-size: .7rem;
+    color: var(--Desaturate--Dar--Blue);
+}
+
+.about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.info{
+    display: flex;
+    gap: 1rem;
+}
+
+.avatar-img{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.avatar-img img{
+    width: 100%;
+}
+
+.avatar-info p{
+    color: var(--Very--Dark--Grayish--Blue);
+    font-weight: 700;
+}
+
+.avatar-info span{
+    color: var(--Grayis--Blue);
+    font-weight: 500;
+}
