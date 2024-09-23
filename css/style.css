@@ -33,23 +33,23 @@ main{
     max-width: 50rem;
     background-color: #fff;
     border-radius: 10px;
-    /* overflow: hidden; */
     box-shadow: 0 5px 30px var(--Grayis--Blue);
 }
 
-.intro{
-    margin-block: 1rem 1.3rem;
-}
-
+/* img-wrapper section */
 
 .img-wrapper img{
     height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
+/* intro section */
 .intro{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-block: 1rem 1.3rem;
 }
 
 .intro> * + *{
@@ -64,18 +64,21 @@ main{
     margin-top: 1rem;
 }
 
+/* txt-wrapper section */
+
 .bold-txt{
     font-size: 1.2rem;
     color: var(--Very--Dark--Grayish--Blue);
     line-height: 1.4;
-    text-wrap: balance;
 }
 
+/* intro-paragraph section */
 .intro-paragraph{
     font-size: .9rem;
     color: var(--Desaturate--Dar--Blue);
 }
 
+/* about section */
 .about{
     display: flex;
     justify-content: space-between;
@@ -84,6 +87,7 @@ main{
     position: relative;
 }
 
+/* info section */
 .info{
     display: flex;
     align-items: center;
@@ -116,11 +120,7 @@ main{
     font-weight: 500;
 }
 
-.active{
-    background-color: var(--Desaturate--Dar--Blue);
-    fill: #fff;
-}
-
+/* social links section */
 .social-links{
     display: flex;
     align-items: center;
@@ -141,14 +141,14 @@ main{
 .links{
     display: flex;
     align-items: center;
+    gap: 1rem;
     background-color: var(--Very--Dark--Grayish--Blue);
     position: absolute;
-    gap: 1rem;
+    top: -4.5rem;
+    left: -3.8rem;
     font-size: .8rem;
     letter-spacing: .5rem;
     visibility: hidden;
-    top: -4.5rem;
-    left: -3.8rem;
     padding: 1rem 2rem;
     border-radius: 8px;
     box-shadow: 0 5px 20px var(--Grayis--Blue);
@@ -170,6 +170,13 @@ main{
     color: var(--Grayis--Blue);
 }
 
+/* button style change */
+.active{
+    background-color: var(--Desaturate--Dar--Blue);
+    fill: #fff;
+}
+
+/* social links style change */
 .appear{
     visibility: visible;
 }
@@ -181,32 +188,27 @@ main{
         margin-block: 2rem;
         overflow: hidden;
     }
+    .about{
+        margin-top: 3rem;
+    }
 
     .intro{
         margin-top: 3rem;
     }
     
-    .about{
-        margin-top: 3rem;
-    }
-
     .social-links{
         position: static;
-    }
-
-    .share{
-        top: .5rem;
     }
 
     .links{
         width: 100%;
         left: 0;
         bottom: -1.3rem;
-        /* padding: 2.5rem 2rem; */
         border-radius: 0;
-        top: 0;
-        box-shadow:none
+        top: -1rem;
+        box-shadow:none;
     }
+
     .links::after{
         display: none;
     }
